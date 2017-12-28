@@ -31,14 +31,14 @@ public:
 	/*
 	 * REG DEV_ID:
 	 * 7.2.2
-	 *       Register 0x00 is the device identifier.
-	 *       This is hard-coded into the silicon.
-	 *       The value in this register is read-only and cannot be overwritten by the host system.
-	 *       The device ID will be changed for any silicon updates.
-	 *       The device ID register is ideal to use in the host μP to validate that the SPI interface
-	 *       is operational.
-	 *       It is expected that the host system will validate that the device ID is the expected
-	 *       value, supported by its software, before proceeding to use the IC. 
+	 * Register 0x00 is the device identifier.
+	 * This is hard-coded into the silicon.
+	 * The value in this register is read-only and cannot be overwritten by the host system.
+	 * The device ID will be changed for any silicon updates.
+	 * The device ID register is ideal to use in the host μP to validate that the SPI interface
+	 * is operational.
+	 * It is expected that the host system will validate that the device ID is the expected
+	 * value, supported by its software, before proceeding to use the IC.
 	 */
 	struct DEV_ID
 	{
@@ -74,11 +74,11 @@ public:
 	/*
 	 * REG SYS_CFG:
 	 * 7.2.6
-	 *       Register 0x04 is the system configuration register.
-	 *       This is a bitmapped register.
-	 *       Each bit field is separately identified and described below.
-	 *       The System Configuration register contains the following bitmapped sub-fields: Definition
-	 *       of the bit fields within REG:04:00 – SYS_CFG: System Configuration bitmap: - 
+	 * Register 0x04 is the system configuration register.
+	 * This is a bitmapped register.
+	 * Each bit field is separately identified and described below.
+	 * The System Configuration register contains the following bitmapped sub-fields: Definition
+	 * of the bit fields within REG:04:00 – SYS_CFG: System Configuration bitmap: -
 	 */
 	struct SYS_CFG
 	{
@@ -114,8 +114,8 @@ public:
 	/*
 	 * REG TX_FCTRL:
 	 * 7.2.10
-	 *       Register 0x08, the transmit frame control register, contains a number of TX control fields.
-	 *       (For a general discussion of transmission please refer to section 3 – Message Transmission.) 
+	 * Register 0x08, the transmit frame control register, contains a number of TX control fields.
+	 * (For a general discussion of transmission please refer to section 3 – Message Transmission.)
 	 */
 	struct TX_FCTRL
 	{
